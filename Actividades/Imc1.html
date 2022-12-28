@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC1</title>
+</head>
+<body>
+    <h3>Programa Cálculo IMC</h3>
+    <!-- <div>
+        <script>
+            pesoCristian = 65;
+            alturaCristian = 1.65;
+            imcCristian = pesoCristian / (alturaCristian * alturaCristian);
+        
+            document.write("El IMC de Cristian es: " + imcCristian);
+            /* Si nos piden Calcular el IMC de más personas, tendriamos que 
+                registrar el peso, altura y calculo imc de cada persona. 
+               Por eso es importante manejar funciones, ya que nos permitira
+                encapsular el calculo de la informacion "imc" y facilitara el 
+                manejo de varios datos a la vez. (peso, altura y el calculo Imc) */
+        </script>
+    </div>  -->
+    <!-- <div>
+        <script>
+            function saltoLinea() {
+                document.write("<br><br>");
+            }
+
+            function imprimir(frase) {
+                document.write(frase);
+                saltoLinea();
+            }
+
+            function calcularImc(peso, altura) {
+                imc = peso / (altura * altura);
+                return(imc);
+            }
+            //Datos de la Persona
+            var pesoRaul = 75; 
+            var alturaRaul= 1.75;
+
+            imcRaul= calcularImc(pesoRaul, alturaRaul);
+            imprimir("El IMC de Raul es: " +imcRaul);
+
+            //Datos de la Persona
+            var pesoFelipe = 65; 
+            var alturaFelipe= 1.65;
+
+            imcFelipe= calcularImc(pesoFelipe, alturaFelipe);
+            imprimir("El IMC de Felipe es: " +imcFelipe);
+        </script>
+    </div> -->
+    <div>
+        <script>
+            function saltoLinea() {
+                document.write("<br><br>");
+            }
+
+            function imprimir(frase) {
+                document.write(frase);
+                saltoLinea();
+            }
+
+            function calcularImc(peso, altura, nombre) {
+                imc = peso / (altura * altura);
+                imprimir("El IMC calculado de " + nombre +" es: " + imc);
+            }
+            //Datos -> (Peso - Altura- Nombre)
+            calcularImc(75, 1.75, "Raul");
+            calcularImc(65, 1.65, "Felipe");
+            
+        </script>
+    </div>
+</body>
+</html>

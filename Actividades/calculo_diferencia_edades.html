@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferencia de Edades</title>
+</head>
+<body>
+    
+    <script>
+        function mostrarAlerta(mensaje) {
+             alert(" * * " + mensaje + " * * ");
+        }
+
+        function saltarlinea (){
+            document.write("<br><br>");
+        }
+
+        function imprimir(frase){
+              document.write(frase);
+              saltarlinea();
+        }
+
+        var anio = 2022;
+        var edadHermano = (anio - 1990);
+        var edadmia = (anio - 1995);
+        var diferencia = ((edadHermano - edadmia));
+        
+        imprimir("DIFERENCIA DE EDADES");
+        imprimir("Edad actual de mi Hermano: " +edadHermano +" años");
+        imprimir("Mi Edad actual: " +edadmia +" años");
+        
+        mostrarAlerta("Diferencia de Edades con mi Hermano");
+        mostrarAlerta("Nuestra diferencia de edad es de: " + diferencia +" años");
+        mostrarAlerta("Edad actual de mi Hermano: " +edadHermano +" años");
+        mostrarAlerta("Mi Edad actual: " +edadmia +" años");
+        
+    </script>
+</body>
+</html>

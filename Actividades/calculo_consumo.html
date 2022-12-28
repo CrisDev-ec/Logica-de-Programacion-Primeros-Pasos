@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Consumo</title>
+</head>
+<body>
+    <h2>¿Alcohol o Gasolina?</h2>
+
+   <script>
+    document.write("<h4>Recorrido del carro por kilómetros usando: </h4>");
+    var tanque = 40, kilometros = 480;
+    var liquido = "Gasolina";
+    var calculoKm = ((kilometros / tanque));
+    
+    document.write(liquido);
+    document.write("<br>"); 
+    document.write("Un carro" +" tiene un tanque de: " +tanque +" litros");
+    document.write("<br>"); 
+    document.write(" Recorrio: " +kilometros +" Km");
+    document.write("<br>");
+    document.write("La eficiencia del carro usando " + liquido +" es de " +calculoKm + " km/L");
+    document.write("<br>");
+    document.write("<br>");
+
+    tanque = 40, kilometros = 300;
+    liquido = "Alcohol";
+    calculoKm = ((kilometros / tanque));
+
+    document.write("<h4>Recorrido del carro por kilómetros usando: </h4>");
+    document.write(liquido);
+    document.write("<br>"); 
+    document.write("Un carro" +" tiene un tanque de: " +tanque +" litros");
+    document.write("<br>"); 
+    document.write(" Recorrio: " +kilometros +" Km");
+    document.write("<br>");
+    document.write("La eficiencia del carro usando " + liquido +" es de " +calculoKm + " km/L");
+    document.write("<br>"); 
+   </script>
+</body>
+</html>

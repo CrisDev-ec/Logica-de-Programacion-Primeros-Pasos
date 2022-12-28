@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC2</title>
+</head>
+<body>
+    <h3>Programa Cálculo IMC</h3>
+    <div>
+        <script>
+            function saltoLinea(){
+                document.write("<br><br>");
+            }
+
+            function imrpimir(frase){
+                document.write(frase);
+                saltoLinea();
+            }
+            
+            function calcularImc(peso,altura){
+            
+                 return (peso / (altura * altura));  
+            }
+            
+            imrpimir("El promedio del imc calculado de Raul y Felipe es de: " + (calcularImc(71,1.72) + calcularImc(75,1.73))/2);
+            
+            imrpimir("El promedio del imc calculado de Gabriela y Luisa es de: " + (calcularImc(65,1.68) + calcularImc(55,1.60))/2);
+        </script>
+    </div>
+</body>
+</html>
